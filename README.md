@@ -7,7 +7,8 @@ A growing collection of GitHub Copilot agents and reusable skills. This reposito
 ```
 .github/
 ├── agents/                          # Copilot agent definitions
-│   └── azure-architect.agent.md     # Azure Solutions Architect agent
+│   ├── azure-architect.agent.md     # Azure Solutions Architect agent
+│   └── gh-aw-builder.agent.md       # GitHub Agentic Workflow Builder agent
 ├── skills/                          # Reusable skill instructions
 │   ├── api-security-review/         # API security audits and OWASP compliance
 │   ├── apim-policy-authoring/       # Azure API Management policy generation
@@ -16,6 +17,7 @@ A growing collection of GitHub Copilot agents and reusable skills. This reposito
 │   ├── azure-apim-architecture/     # APIM architecture decisions and patterns
 │   ├── cost-optimization/           # Azure cost analysis and savings recommendations
 │   ├── drawio-mcp-diagramming/      # Architecture diagrams via Draw.io MCP
+│   ├── gh-aw-operations/            # GitHub Agentic Workflow creation, compilation, and debugging
 │   └── waf-assessment/              # Well-Architected Framework assessments
 └── copilot-instructions.md          # Repo-wide Copilot governance and defaults
 ```
@@ -25,6 +27,7 @@ A growing collection of GitHub Copilot agents and reusable skills. This reposito
 | Agent | Description |
 |-------|-------------|
 | `azure-architect` | Azure Solutions Architect — designs production-ready architectures aligned to WAF and CAF |
+| `gh-aw-builder` | GitHub Agentic Workflow Builder — creates and configures markdown-based AI-powered GitHub Agentic Workflows (gh-aw) with proper frontmatter, MCP servers, safe-outputs, and best practices |
 
 ## Skills
 
@@ -37,6 +40,7 @@ A growing collection of GitHub Copilot agents and reusable skills. This reposito
 | `azure-apim-architecture` | Analyses APIM architecture decisions including VNet topology, multi-environment strategies, and component trade-offs |
 | `cost-optimization` | Identifies cost reduction opportunities and quantifies savings across Azure workloads |
 | `drawio-mcp-diagramming` | Creates and edits architecture diagrams using the Draw.io MCP integration |
+| `gh-aw-operations` | Comprehensive skills for creating, compiling, debugging, and managing GitHub Agentic Workflows (gh-aw) |
 | `waf-assessment` | Assesses architectures across all five WAF pillars and provides scored recommendations |
 
 ## Usage
