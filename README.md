@@ -6,26 +6,15 @@ A growing collection of GitHub Copilot agents and reusable skills. This reposito
 
 ```
 .github/
-├── agents/                          # Copilot agent definitions
-│   ├── azure-architect.agent.md     # Azure Solutions Architect agent
-│   └── gh-aw-builder.agent.md       # GitHub Agentic Workflow Builder agent
-├── skills/                          # Reusable skill instructions
-│   ├── api-security-review/         # API security audits and OWASP compliance
-│   ├── apim-policy-authoring/       # Azure API Management policy generation
-│   ├── apiops-deployment/           # APIOps CI/CD and IaC deployment
-│   ├── architecture-design/         # Azure solution design and HLD documentation
-│   ├── azure-apim-architecture/     # APIM architecture decisions and patterns
-│   ├── cost-optimization/           # Azure cost analysis and savings recommendations
-│   ├── drawio-mcp-diagramming/      # Architecture diagrams via Draw.io MCP
-│   ├── gh-aw-operations/            # GitHub Agentic Workflow creation, compilation, and debugging
-│   └── waf-assessment/              # Well-Architected Framework assessments
-└── copilot-instructions.md          # Repo-wide Copilot governance and defaults
+├── agents/
+└── skills/
 ```
 
 ## Agents
 
 | Agent | Description |
 |-------|-------------|
+| `apim-policy-author` | APIM Policy Author — generates production-ready Azure API Management policy XML for authentication, rate limiting, CORS, error handling, and transformations with hybrid auth best practices |
 | `azure-architect` | Azure Solutions Architect — designs production-ready architectures aligned to WAF and CAF |
 | `gh-aw-builder` | GitHub Agentic Workflow Builder — creates and configures markdown-based AI-powered GitHub Agentic Workflows (gh-aw) with proper frontmatter, MCP servers, safe-outputs, and best practices |
 
