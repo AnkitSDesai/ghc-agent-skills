@@ -104,6 +104,30 @@ For each identified gap:
 - **Priority**: Critical / High / Medium / Low
 - **Effort**: Hours or days to implement
 
+### Step 4 (Required): Generate Excel Deliverable
+
+In addition to the Markdown assessment, generate a stakeholder-friendly Excel workbook whenever this skill is used.
+
+**Generator script**
+- Script: `scripts/generate_waf_assessment_excel.py`
+- Output: `.github/skills/waf-assessment/mid/waf_assessment_results.xlsx`
+
+**How to run (local, from repo root)**
+
+```bash
+python -m pip install --user openpyxl
+python scripts/generate_waf_assessment_excel.py
+```
+
+**What the workbook contains**
+- `Overview`: Assessment date + architecture excerpt
+- `Scores`: Pillar scores with conditional formatting
+- `Recommendations`: Actionable recommendations with priority/effort and support-case linkage
+- `Roadmap`: 7/30/90-day plan
+- `SupportCases`: Imported support tickets table
+
+If the Excel generator script or source artifacts are missing, call that out explicitly in the assessment output and still provide the Markdown assessment.
+
 ## Assessment Output Format
 
 ```markdown
